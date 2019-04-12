@@ -152,7 +152,7 @@
     left: 50%;
     width: 1126px;
 	height: 264px;
-    margin-top: -128px; /*set to a negative number 1/2 of your height*/
+    margin-top: -108px; /*set to a negative number 1/2 of your height*/
     margin-left: -563px; /*set to a negative number 1/2 of your width*/
     border: 0.5px solid #ccc;
     position:fixed;
@@ -184,3 +184,4 @@
   visibility: visible;
   transform: scaleX(1);
 }
+
