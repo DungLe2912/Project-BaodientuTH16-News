@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
-@media screen and (max-width: 1248px){
+@media screen and (max-width: 1328px){
 	#firstrowcontact{
 		display: none;
 	}
@@ -188,7 +188,10 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
-
+.sidebar-header{
+    margin-top: 10px;
+    padding-left: 30px;
+}
 .sidebar {
   height: 100%;
   width: 0;
@@ -196,50 +199,93 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #6D7FCC;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  color: white;
 }
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 15px;
+  color: white;
   display: block;
   transition: 0.3s;
+  margin-right: 0;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #6D7FCC;
+  background-color: white;
 }
 
 .sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 46px;
   margin-left: 50px;
+  background-color: #6D7FCC;
+  border: none;
 }
-
+.closebtn:hover{
+  color: #13F01D;
+}
 .openbtn {
+  font-weight: bold;
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
+  color: black;
+  background-color: #F8F8F8;
   padding: 10px 15px;
   border: none;
+  margin-left: 31px;
+  margin-top: 10px;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  color: #35DE69;
 }
+
+#main {
+  transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
+.prevent-click {
+     pointer-events: none;
 }
+#nav_fixed{
+  position: -webkit-sticky;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+#a1{
+  background-color: red;
+  color: white;
+}
+#menu1,#menu2,#menu3,#menu4,#menu5 a{
+  margin-left: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+#mySidebar{
+  margin-bottom: 10px;
+}
+.selected {  
+    font-weight: bold;
+    color: #6D7FCC;
+    background-color: red; 
+}  
