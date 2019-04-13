@@ -2,6 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
+/*CSS for responsive web*/
 @media screen and (max-width: 1328px){
 	#firstrowcontact{
 		display: none;
@@ -12,7 +13,7 @@ body {
 	#textforimg{
 		display: none;
 	}
-	
+/*CSS for nav-menu*/	
 }
 #firstrowcontact{
 	background-color: #111111;
@@ -124,32 +125,15 @@ body {
 @media (min-width: 768px){
     .navbar-nav{
         float:none;
-        margin: 0 auto;
+
+        margin: 3px auto;
         display: table;
         table-layout: fixed;
 
     }
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
 #dropdown_megamenu{
 	background-color: white;
 	top: 50%;
@@ -188,6 +172,8 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
+
+/*CSS for sidebar*/
 .sidebar-header{
     margin-top: 10px;
     padding-left: 30px;
@@ -241,14 +227,21 @@ body {
   background-color: #F8F8F8;
   padding: 10px 15px;
   border: none;
-  margin-left: 31px;
+  margin-left: 15px;
   margin-top: 10px;
 }
 
 .openbtn:hover {
   color: #35DE69;
 }
-
+#menu1,#menu2,#menu3,#menu4,#menu5 a{
+  margin-left: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+#mySidebar{
+  margin-bottom: 10px;
+}
 #main {
   transition: margin-left .5s;
 }
@@ -276,16 +269,116 @@ body {
   background-color: red;
   color: white;
 }
-#menu1,#menu2,#menu3,#menu4,#menu5 a{
-  margin-left: 30px;
-  font-size: 15px;
-  font-style: italic;
-}
-#mySidebar{
-  margin-bottom: 10px;
-}
+
 .selected {  
     font-weight: bold;
     color: #6D7FCC;
     background-color: red; 
-}  
+} 
+
+/*CSS for dropdown menu*/ 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.dropdown-content a:hover{
+  background-color:#6D7FCC;
+  font-style: italic;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*CSS for search button*/
+.searchbtn{
+  border: none;
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #F8F8F8;
+}
+.searchbtn:hover{
+   color: #35DE69;
+}
+
+/*CSS for div search*/
+.modal-body{
+  display: grid;
+  font-family: Avenir;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;}
+  
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.inp .label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.inp input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+.inp input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus + span + .border {
+  transform: scaleX(1);
+}
+
