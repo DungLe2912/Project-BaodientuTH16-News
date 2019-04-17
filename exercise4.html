@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS4</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="main">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, deleniti? Quos, aperiam ipsam. A expedita placeat iste dicta quis, rem, consequatur veritatis, aliquam voluptas amet porro quidem exercitationem facilis aperiam.
+  </div>
+<button type="button" onclick="changeColor()">change color</button>
+  <script type="text/javascript">
+    function changeColor(){
+      var datacolor = ['red','blue','purple'];
+      var data  = document.getElementById("main");
+      data.style.color = datacolor[Math.floor(Math.random()*datacolor.length)];
+    }
+  </script>
+</body>
+
+</html>
